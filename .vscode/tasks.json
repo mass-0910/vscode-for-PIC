@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "detail": "Build C source files",
+            "type": "shell",
+            "command": "xc8",
+            "args": [
+                "--chip=12F1822", // Update this to chip you're targeting.
+                "-Oout/main",
+                "src/main.c"
+            ],
+            "group": {
+                "isDefault": true,
+                "kind": "build"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean",
+            "detail": "Clean output files",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "out/*"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Program",
+            "detail": "Program a hex file to a device",
+            "type": "shell",
+            "command": "mdb",
+            "args": [
+                "mdb_script.txt"
+            ],
+            "dependsOn":[
+                "Build"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

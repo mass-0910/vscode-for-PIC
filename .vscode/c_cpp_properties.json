@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "PIC-CONF",
+            "includePath": [
+                "${workspaceFolder}",
+                "C:/Program Files/Microchip/xc8/v2.32/pic/include",
+                "C:/Program Files/Microchip/xc8/v2.32/pic/include/c99",
+                "C:/Program Files/Microchip/xc8/v2.32/pic/include/proc"
+            ],
+            "defines": [
+                "__XC8",
+                "__PICC__",
+                "_12F1822", // Update this to chip you're targeting.
+                "__interrupt()="
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "C:/Program Files/Microchip/xc8/v2.32/pic/include",
+                    "C:/Program Files/Microchip/xc8/v2.32/pic/include/c99",
+                    "C:/Program Files/Microchip/xc8/v2.32/pic/include/proc"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "cStandard": "c99",
+            "cppStandard": "c++17",
+            "compilerPath": ""
+        }
+    ],
+    "version": 4
+}

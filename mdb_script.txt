@@ -1,0 +1,10 @@
+# Update parameters to chip you're targeting.
+Device PIC12F1822
+Set AutoSelectMemRanges auto
+Set programoptions.eraseb4program true
+Set poweroptions.powerenable true
+set voltagevalue 4.5
+Set system.yestoalldialog true
+Hwtool pickit3 -p
+Program out/main.hex
+Quit
